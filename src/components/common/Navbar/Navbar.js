@@ -15,7 +15,7 @@ import {
 
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 
-const NAV_ITEMS = ['About', 'Brands', 'Team', 'FAQ'];
+const NAV_ITEMS = ['Our Story', 'The Team', 'FAQ'];
 
 class Navbar extends Component {
   state = {
@@ -33,7 +33,7 @@ class Navbar extends Component {
   };
 
   getNavAnchorLink = item => (
-    <AnchorLink href={`#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
+    <AnchorLink href={`#${item.toLowerCase().replace(/\s+/g, '')}`} onClick={this.closeMobileMenu}>
       {item}
     </AnchorLink>
   );
@@ -41,7 +41,7 @@ class Navbar extends Component {
   getNavList = ({ mobile = false }) => (
     <NavListWrapper mobile={mobile}>
       <Scrollspy
-        items={NAV_ITEMS.map(item => item.toLowerCase())}
+        items={NAV_ITEMS.map(item => item.toLowerCase().replace(/\s+/g, ''))}
         currentClassName="active"
         mobile={mobile}
         offset={-64}
@@ -59,7 +59,7 @@ class Navbar extends Component {
     return (
       <Nav {...this.props}>
         <StyledContainer>
-          <Brand>Absurd</Brand>
+          <Brand>Creative Music Lab</Brand>
           <Mobile>
             <button onClick={this.toggleMobileMenu} style={{ color: 'black' }}>
               <MenuIcon />

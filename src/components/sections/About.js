@@ -44,16 +44,14 @@ const About = () => (
       }
     `}
     render={data => (
-      <Section id="about">
+      <Section id="ourstory">
         <Container>
           <Grid>
             <div>
-              <h2>Speed past the competition</h2>
+              <h2>Why now? </h2>
               <p>
-                Gatsby.js builds the fastest possible website. Instead of
-                waiting to generate pages when requested, pre-build pages and
-                lift them into a global cloud of servers — ready to be delivered
-                instantly to your users wherever they are.
+                  
+In the wake of the pandemic, all levels of human interactions and perspectives have been challenged-- down to the very physical act of making music, sharing it, and teaching it-- it has all changed. For every radical situation that we are put in, we must come up with radical solutions.  
               </p>
             </div>
             <Art>
@@ -65,23 +63,21 @@ const About = () => (
               <Img fluid={data.art_learn.childImageSharp.fluid} />
             </Art>
             <div>
-              <h2>Nothing new to learn here</h2>
+              <h2>So now what?</h2>
               <p>
-                Enjoy the power of the latest web technologies – React.js ,
-                Webpack , modern JavaScript and CSS and more — all set up and
-                waiting for you to start building.
+                <b>For every radical situation that we are put in, we must come up with radical solutions.</b> <i>Creative Music Lab </i> embraces aspects of change and welcomes them
+                into a brand new virtual learning environment partnering young students from any musical background and training in China and the US. 
               </p>
             </div>
           </Grid>
           <Grid>
             <div>
-              <h2>Grow and build your ideas</h2>
+              <h2> Sparking a conversation </h2>
               <p>
-                Waste no more time on tooling and performance. Focus on the the
-                site you want to build and nothing more.
+               Creative Music Lab fosters relationships and trust using music as a tool for collaboration. By opening the door to new perspectives, we are able to forge a brighter and inclusive future that is built off of listening and understanding. 
                 <br />
                 <br />
-                Gatsby is fast in every way that matters.
+                Be a part of the conversation.
               </p>
             </div>
             <Art>
@@ -110,6 +106,12 @@ const Grid = styled.div`
     grid-template-columns: 2fr 3fr;
   `}
 
+  b {
+    font-size: 1.0em;
+  }
+  i {
+    font-size: 0.9em;
+  }
   h2 {
     margin-bottom: 16px;
   }

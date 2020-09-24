@@ -6,22 +6,12 @@ import Img from 'gatsby-image';
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
-import GithubIcon from '@static/icons/github.svg';
 import InstagramIcon from '@static/icons/instagram.svg';
-import TwitterIcon from '@static/icons/twitter.svg';
 
 const SOCIAL = [
   {
-    icon: GithubIcon,
-    link: 'https://github.com/ajayns/gatsby-absurd',
-  },
-  {
     icon: InstagramIcon,
-    link: 'https://instagram.com/ajay_ns',
-  },
-  {
-    icon: TwitterIcon,
-    link: 'https://twitter.com/ajayns08',
+    link: 'https://instagram.com/liebestud',
   },
 ];
 
@@ -49,6 +39,9 @@ const Footer = () => (
             style={{ width: 480, maxWidth: '100%', marginBottom: -16 }}
           />
         </Art>
+
+
+
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
@@ -110,6 +103,10 @@ const Art = styled.figure`
   justify-content: center;
   margin: 0;
   margin-top: 48px;
+`;
+
+const Form = styled.figure`
+  width: 100vw;
 `;
 
 const StyledContainer = styled(Container)`
