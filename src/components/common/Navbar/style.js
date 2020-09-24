@@ -5,6 +5,11 @@ import { Container } from '@components/global';
 export const Nav = styled.nav`
   padding: 16px 0;
   background-color: ${props => props.theme.color.primary};
+
+background: #355C7D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #E09CB4, #9C8BAB, #658CAD);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #E09CB4, #9C8BAB, #658CAD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   position: fixed;
   width: 100%;
   top: 0;

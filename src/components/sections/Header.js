@@ -39,8 +39,8 @@ const Header = () => (
               </h1>
               <br />
               <p>
-                <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
-                  Check out source &nbsp;&#x2794;
+                <StyledExternalLink href="https://www.gofundme.com/manage/creative-music-lab-teaching-china-and-us-students">
+                  Check out our GoFundMe &nbsp;&#x2794;
                 </StyledExternalLink>
               </p>
             </Text>
@@ -54,8 +54,8 @@ const Header = () => (
 const HeaderWrapper = styled.header`
 
 background: #355C7D;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: -webkit-linear-gradient(to left, #D08CA4, #8C7B9B, #557C9D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #D08CA4, #8C7B9B, #557C9D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   padding-top: 96px;
 

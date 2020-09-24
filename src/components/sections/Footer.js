@@ -33,12 +33,6 @@ const Footer = () => (
     `}
     render={data => (
       <React.Fragment>
-        <Art>
-          <Img
-            fluid={data.art_pot.childImageSharp.fluid}
-            style={{ width: 480, maxWidth: '100%', marginBottom: -16 }}
-          />
-        </Art>
 
 
 
@@ -46,13 +40,6 @@ const Footer = () => (
           <StyledContainer>
             <Copyright>
               <h2>Absurd</h2>
-              <span>
-                Illustrations by
-                {` `}
-                <ExternalLink href="https://twitter.com/diana_valeanu">
-                  @diana_valeanu
-                </ExternalLink>
-              </span>
             </Copyright>
             <SocialIcons>
               {SOCIAL.map(({ icon, link }) => (
@@ -84,6 +71,10 @@ const SocialIcons = styled.div`
 
 const FooterWrapper = styled.footer`
   background-color: ${props => props.theme.color.primary};
+
+background: #355C7D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #D08CA4, #8C7B9B, #557C9D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #D08CA4, #8C7B9B, #557C9D); /
   padding: 32px 0;
 `;
 
