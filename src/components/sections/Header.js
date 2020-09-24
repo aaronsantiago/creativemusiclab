@@ -39,8 +39,8 @@ const Header = () => (
               </h1>
               <br />
               <p>
-                <StyledExternalLink href="https://www.gofundme.com/manage/creative-music-lab-teaching-china-and-us-students">
-                  Check out our GoFundMe &nbsp;&#x2794;
+                <StyledExternalLink href="https://gf.me/u/y2fdn3">
+                  Support us &nbsp;&#x2794;
                 </StyledExternalLink>
               </p>
             </Text>
